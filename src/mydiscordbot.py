@@ -638,7 +638,7 @@ class SimpleAsyncDiscord(threading.Thread):
         and channels on the discord server.
         :return: the formatted message that may be sent back to Quake Live.
         """
-        sender = author.name
+        sender = author.display_name
         if hasattr(author, "nick") and author.nick is not None:
             sender = author.nick
 
